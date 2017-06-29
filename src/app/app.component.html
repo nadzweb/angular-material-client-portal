@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="side" class="app-sidenav">
+    <ul>
+    	<li><a href="">Dashboard</a></li>
+    	<li><a href="">News</a></li>
+    	<li><a href="">Tasks</a></li>
+    	<li><a href="">Projects</a></li>
+    	<li><a href="">Documents</a></li>
+    	<li><a href="">Contacts</a></li>
+    </ul>
+  </md-sidenav>
+  
+  <md-toolbar color="primary">
+    <button class="app-icon-button" (click)="sidenav.toggle()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+    <div>Client Portal</div>
+    <span class="app-toolbar-filler"></span>
+  </md-toolbar>
+  
+  <div class="app-content">
+   	<md-card>
+   		hello inside card!
+    </md-card>
+  </div>
+</md-sidenav-container>

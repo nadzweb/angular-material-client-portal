@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit, HostListener } from '@angular/core';
+import { Location } from '@angular/common';
+import { Router, ActivatedRoute } from '@angular/router';
+import { MaterialModule, MdSidenav, DateAdapter } from '@angular/material';
 
 @Component({
   selector: 'app-root',
