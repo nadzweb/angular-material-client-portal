@@ -13,12 +13,17 @@ import { AuthService } from './core/services/auth.service';
 export class AppComponent implements OnInit {
   
   constructor(
+  private location: Location,
   private authService: AuthService) {
 
   }
   ngOnInit() {
-  	if (!this.authService.isAuthenticated()) {
-  	  this.authService.login();
+  	if (this.location.path() === '/callback') {
+  		this.authService.handleAuthentication();
+  	} else {
+  	 if (!this.authService.isAuthenticated()) {
+  	 	this.authService.login();
+  	 }
   	}
   	
   }
