@@ -1,59 +1,65 @@
-.menu {
-  background: #5bc995;
-  height: 100vh;
+@import '../scss/app/variables';
+
+.app-content {
+  min-height: 500px;
+}
+.app-sidenav {
   width: 240px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  outline: none;
+  min-height: 500px;
+  background: $app-left-nav-bg-color;
+  border-right: 1px solid $app-left-nav-border-color;
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    outline: none;
+    width: 240px;
+
+    .avatar {
+      background: $app-left-nav-avatar-bg-color;
+      padding: 2em 0.5em;
+      text-align: center;
+
+      img {
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid $app-left-nav-avatar-border-color;
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0.5em 0;
+      margin: 0;
+
+      li {
+        padding: 0.5em 1em 0.5em 3em;
+        font-size: 0.95em;
+        font-weight: regular;
+        background-repeat: no-repeat;
+        background-position: left 15px center;
+        background-size: auto 20px;
+        transition: all 0.15s linear;
+        cursor: pointer;
+        &:hover {
+          background-color: $app-left-nav-hover-bg-color;
+          color: $white;
+        }
+        &:focus {
+          outline: none;
+        }
+        
+      }
+    }
+  }
 }
-.menu .avatar {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 2em 0.5em;
-  text-align: center;
-}
-.menu .avatar img {
-  width: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #ffea92;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-}
-.menu .avatar h2 {
-  font-weight: normal;
-  margin-bottom: 0;
-}
-.menu ul {
-  list-style: none;
-  padding: 0.5em 0;
-  margin: 0;
-}
-.menu ul li {
-  padding: 0.5em 1em 0.5em 3em;
-  font-size: 0.95em;
-  font-weight: regular;
-  background-repeat: no-repeat;
-  background-position: left 15px center;
-  background-size: auto 20px;
-  transition: all 0.15s linear;
-  cursor: pointer;
-}
-.menu ul li.icon-dashboard {
-  background-image: url("http://www.entypo.com/images//gauge.svg");
-}
-.menu ul li.icon-customers {
-  background-image: url("http://www.entypo.com/images//briefcase.svg");
-}
-.menu ul li.icon-users {
-  background-image: url("http://www.entypo.com/images//users.svg");
-}
-.menu ul li.icon-settings {
-  background-image: url("http://www.entypo.com/images//tools.svg");
-}
-.menu ul li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.menu ul li:focus {
-  outline: none;
+
+.mat-toolbar-row {
+  display: block;
+  .title {
+    text-align: center;
+    font-weight: bold;
+  }
 }

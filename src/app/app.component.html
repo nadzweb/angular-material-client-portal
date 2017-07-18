@@ -2,31 +2,39 @@
   <md-sidenav #sidenav mode="side" class="app-sidenav">
 
     <nav class="menu" tabindex="0">
-	<div class="smartphone-menu-trigger"></div>
-  <header class="avatar">
-		<img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
-    <h2>John D.</h2>
-  </header>
-	<ul>
-    <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
-    <li tabindex="0" class="icon-customers"><span>Customers</span></li>
-    <li tabindex="0" class="icon-users"><span>Users</span></li>
-    <li tabindex="0" class="icon-settings"><span>Settings</span></li>
-  </ul>
-</nav>
+	    <div class="smartphone-menu-trigger"></div>
+      <header class="avatar">
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
+        <div>Portal</div>
+      </header>
+      <ul>
+        <li tabindex="0" class="icon-dashboard"><md-icon>dashboard</md-icon><span>Dashboard</span></li>
+        <li tabindex="0" class="icon-customers"><span>Customers</span></li>
+        <li tabindex="0" class="icon-users"><span>Users</span></li>
+        <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+      </ul>
+    </nav>
   </md-sidenav>
   
-  <md-toolbar color="primary">
-    <button class="app-icon-button" (click)="sidenav.toggle()">
-      <i class="material-icons app-toolbar-menu">menu</i>
-    </button>
-    <div>Client Portal</div>
-    <span class="app-toolbar-filler"></span>
+  <md-toolbar color="primary" class="">
+    <div class="row">
+      <div class="col s2">
+        <button class="app-icon-button" (click)="sidenav.toggle()">
+          <i class="material-icons app-toolbar-menu">menu</i>
+        </button>
+      </div>
+      <div class="col s8">
+        <div class="title">Client Portal</div>
+      </div>
+    </div>
   </md-toolbar>
   
   <div class="app-content">
    	<md-card>
-   		hello inside card!
+   		<a md-mini-fab color="primary"><md-icon>edit</md-icon></a>
+   		<a md-mini-fab color="accent"><md-icon>edit</md-icon></a>
+   		<a md-mini-fab color="default"><md-icon>edit</md-icon></a>
+   		<a md-mini-fab color="warn"><md-icon>edit</md-icon></a>
     </md-card>
   </div>
 </md-sidenav-container>
