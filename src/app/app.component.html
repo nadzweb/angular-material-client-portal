@@ -8,10 +8,12 @@
         <div>Portal</div>
       </header>
       <ul>
-        <li tabindex="0" class="icon-dashboard"><md-icon>dashboard</md-icon><span>Dashboard</span></li>
-        <li tabindex="0" class="icon-customers"><span>Customers</span></li>
-        <li tabindex="0" class="icon-users"><span>Users</span></li>
-        <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+        <li><md-icon>dashboard</md-icon><span>Dashboard</span></li>
+        <li><md-icon>line_style</md-icon><span>Projects</span></li>
+        <li><md-icon>description</md-icon><span>Documents</span></li>
+        <li><md-icon>web</md-icon><span>News</span></li>
+        <li><md-icon>event</md-icon><span>Events</span></li>
+        <li><md-icon>settings</md-icon><span>Settings</span></li>
       </ul>
     </nav>
   </md-sidenav>
@@ -19,9 +21,7 @@
   <md-toolbar color="primary" class="">
     <div class="row">
       <div class="col s2">
-        <button class="app-icon-button" (click)="sidenav.toggle()">
-          <i class="material-icons app-toolbar-menu">menu</i>
-        </button>
+        <a md-mini-fab color="default" (click)="sidenav.toggle()"><md-icon>menu</md-icon></a>
       </div>
       <div class="col s8">
         <div class="title">Client Portal</div>

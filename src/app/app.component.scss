@@ -3,6 +3,7 @@
 .app-content {
   min-height: 500px;
 }
+
 .app-sidenav {
   width: 240px;
   min-height: 500px;
@@ -43,6 +44,10 @@
         background-size: auto 20px;
         transition: all 0.15s linear;
         cursor: pointer;
+        .mat-icon {
+          vertical-align: text-bottom;
+          margin-right: 5px;
+        }
         &:hover {
           background-color: $app-left-nav-hover-bg-color;
           color: $white;
@@ -57,9 +62,12 @@
 }
 
 .mat-toolbar-row {
-  display: block;
-  .title {
-    text-align: center;
-    font-weight: bold;
+  display: block !important;
+  div.row {
+    margin-bottom: 0;
+    padding-top: 13px;
+    .title {
+      text-align: center;
+    }
   }
 }
