@@ -13,17 +13,11 @@ import * as svc from './core/services/index';
 import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './auth/login/login.component';
-import { LogoutComponent } from './auth/logout/logout.component';
-import { RegisterComponent } from './auth/register/register.component';
 import { CallbackComponent } from './auth/callback/callback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    LogoutComponent,
-    RegisterComponent,
     CallbackComponent
   ],
   imports: [
