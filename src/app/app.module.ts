@@ -3,11 +3,12 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DateAdapter, MaterialModule } from '@angular/material';
+import { DateAdapter } from '@angular/material';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { Router, RouterModule  } from '@angular/router';
 import { HttpModule, Http, RequestOptions } from '@angular/http';
+import { AppMaterialModule } from './core/shared/material.module';
 
 import * as svc from './core/services/index';
 import { ROUTES } from './app.routes';
@@ -27,7 +28,7 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
+    AppMaterialModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [

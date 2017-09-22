@@ -1,7 +1,7 @@
 import { Component, ViewChild, OnInit, HostListener } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
-import { MaterialModule, MdSidenav, DateAdapter } from '@angular/material';
+import { MdSidenav, DateAdapter } from '@angular/material';
 
 import { AuthService } from './core/services/auth.service';
 
