@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {
-  A11yModule, BidiModule, MdCommonModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule,
-  MatCardModule, MatCheckboxModule, MatChipsModule, MatCommonModule, MatDatepickerModule,
+  A11yModule, BidiModule, MatCommonModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule,
+  MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
   MatDialogModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatIconModule,
   MatInputModule, MatLineModule, MatListModule, MatMenuModule, MatNativeDateModule,
   MatOptionModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule,
@@ -11,7 +11,7 @@ import {
 } from '@angular/material';
 
 const materialModules = [
-   A11yModule, BidiModule, MdCommonModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule,
+   A11yModule, BidiModule, MatCommonModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule,
   MatCardModule, MatCheckboxModule, MatChipsModule, MatCommonModule, MatDatepickerModule,
   MatDialogModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatIconModule,
   MatInputModule, MatLineModule, MatListModule, MatMenuModule, MatNativeDateModule,

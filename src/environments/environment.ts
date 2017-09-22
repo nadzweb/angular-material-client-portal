@@ -6,8 +6,8 @@
 export const environment = {
   production: false,
   auth0: {
-  	clientID: 'dF1lxGOBreAb1xmZsskKI9nxKjrfSr2f',
-  	domain: 'nadzweb.auth0.com',
-  	redirectUri: 'http://localhost:3000/callback'
+    clientID: 'dF1lxGOBreAb1xmZsskKI9nxKjrfSr2f',
+    domain: 'nadzweb.auth0.com',
+    redirectUri: 'http://localhost:3000/callback'
   }
 };
