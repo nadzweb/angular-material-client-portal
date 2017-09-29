@@ -445,7 +445,7 @@ var environment = {
     auth0: {
         clientID: 'dF1lxGOBreAb1xmZsskKI9nxKjrfSr2f',
         domain: 'nadzweb.auth0.com',
-        redirectUri: 'http://localhost:3000/callback'
+        redirectUri: 'https://nadzweb.github.io/angular-material-client-portal/callback'
     }
 };
 //# sourceMappingURL=environment.js.map
