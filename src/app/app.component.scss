@@ -44,6 +44,16 @@
         margin-bottom: 5px;
       }
     }
+    .menu-trigger {
+      float: right;
+      width: 25px;
+      height: 25px;
+      color: $white;
+      font-size: 25px;
+      background: none;
+      box-shadow: none;
+      margin-right: 10px;
+    }
     ul {
       list-style: none;
       margin: 0;
