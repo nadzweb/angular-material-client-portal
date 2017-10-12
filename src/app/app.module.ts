@@ -17,12 +17,14 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { CallbackComponent } from './auth/callback/callback.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
+import { UserSettingsComponent } from './pages/user-settings/user-settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CallbackComponent,
-    ProjectsPageComponent
+    ProjectsPageComponent,
+    UserSettingsComponent
   ],
   imports: [
     BrowserModule,
