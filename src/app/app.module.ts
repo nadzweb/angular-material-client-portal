@@ -16,15 +16,12 @@ import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { CallbackComponent } from './auth/callback/callback.component';
-import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
-import { UserSettingsComponent } from './pages/user-settings/user-settings.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CallbackComponent,
-    ProjectsPageComponent,
-    UserSettingsComponent
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +29,8 @@ import { UserSettingsComponent } from './pages/user-settings/user-settings.compo
     FormsModule,
     HttpModule,
     AppMaterialModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    PagesModule.forRoot()
   ],
   providers: [
     { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true },

@@ -73,6 +73,10 @@
         &:focus {
           outline: none;
         }
+
+        &.active {
+          background-color: $white;
+        }
         
       }
     }

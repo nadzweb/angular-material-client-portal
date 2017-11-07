@@ -12,7 +12,9 @@
       </header>
       <ul>
         <li><mat-icon>dashboard</mat-icon><span>Dashboard</span></li>
-        <li><mat-icon>line_style</mat-icon><span>Projects</span></li>
+        <li routerLinkActive="active">
+          <a routerLink="/projects"><mat-icon>line_style</mat-icon><span>Projects</span></a>
+        </li>
         <li><mat-icon>description</mat-icon><span>Documents</span></li>
         <li><mat-icon>web</mat-icon><span>News</span></li>
         <li><mat-icon>event</mat-icon><span>Events</span></li>
@@ -33,14 +35,6 @@
   </mat-toolbar>
   
   <div class="app-content">
-    <mat-card>
-      <a mat-mini-fab color="default" (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></a>
-    </mat-card>
-   	<mat-card>
-   		<a mat-mini-fab color="primary"><mat-icon>edit</mat-icon></a>
-   		<a mat-mini-fab color="accent"><mat-icon>edit</mat-icon></a>
-   		<a mat-mini-fab color="default"><mat-icon>edit</mat-icon></a>
-   		<a mat-mini-fab color="warn"><mat-icon>edit</mat-icon></a>
-    </mat-card>
+    <router-outlet></router-outlet>
   </div>
 </mat-sidenav-container>

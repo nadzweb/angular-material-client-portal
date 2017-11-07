@@ -1,0 +1,182 @@
+[
+  {
+    "id": "59ffe7aee35e5ddfd47552e5",
+    "active": true,
+    "picture": "http://placehold.it/32x32",
+    "address": "522 Prince Street, Tyhee, California, 4322",
+    "title": "Xiix",
+    "description": "Ea cillum adipisicing irure dolore qui aute excepteur eu commodo id magna aliquip minim. Lorem esse qui aliquip veniam cillum eu laborum proident. Esse amet ad mollit ut incididunt occaecat. Laboris commodo qui exercitation sunt eiusmod.\r\n",
+    "latitude": -81.488312,
+    "longitude": -50.944877,
+    "tags": [
+      "duis",
+      "excepteur",
+      "duis",
+      "id",
+      "consequat",
+      "velit",
+      "laboris"
+    ],
+    "sponsors": [
+      {
+        "id": "59ffe7ae41dcffb1a6cf3a7d",
+        "name": "Cubix"
+      },
+      {
+        "id": "59ffe7ae93eb1daf6e9dde06",
+        "name": "Portaline"
+      },
+      {
+        "id": "59ffe7aea7314c3062166d97",
+        "name": "Emergent"
+      }
+    ],
+    "type": "Residential",
+    "startDate": "2017-11-06T05:40:14 -13:00",
+    "endDate": "2019-05-01T09:17:34 -12:00"
+  },
+  {
+    "id": "59ffe7ae2f2564d0b3a88e8d",
+    "active": false,
+    "picture": "http://placehold.it/32x32",
+    "address": "523 Classon Avenue, Sehili, American Samoa, 8343",
+    "title": "Anocha",
+    "description": "Nostrud velit sunt culpa exercitation sint exercitation. Ea quis voluptate mollit consectetur et proident. Excepteur nulla aute sunt nostrud labore eu enim.\r\n",
+    "latitude": 27.142479,
+    "longitude": -102.192727,
+    "tags": [
+      "enim",
+      "aute",
+      "exercitation",
+      "laboris",
+      "consectetur",
+      "dolore",
+      "et"
+    ],
+    "sponsors": [
+      {
+        "id": "59ffe7ae0c258de61e79b695",
+        "name": "Ultrimax"
+      },
+      {
+        "id": "59ffe7aee0c8ac8af707c889",
+        "name": "Velity"
+      },
+      {
+        "id": "59ffe7aedc9a1839ea73df38",
+        "name": "Zerology"
+      }
+    ],
+    "type": "Townhouse",
+    "startDate": "2017-11-06T05:40:14 -13:00",
+    "endDate": "2019-02-15T02:44:06 -13:00"
+  },
+  {
+    "id": "59ffe7ae6bfa8271f6847578",
+    "active": false,
+    "picture": "http://placehold.it/32x32",
+    "address": "154 Boerum Street, Mappsville, Oklahoma, 4537",
+    "title": "Zenolux",
+    "description": "Sunt et excepteur ad enim reprehenderit reprehenderit qui. Anim occaecat incididunt amet reprehenderit dolor tempor labore. Qui minim do et quis fugiat pariatur ullamco voluptate.\r\n",
+    "latitude": 57.634455,
+    "longitude": 19.951847,
+    "tags": [
+      "officia",
+      "ullamco",
+      "sunt",
+      "aliqua",
+      "anim",
+      "elit",
+      "amet"
+    ],
+    "sponsors": [
+      {
+        "id": "59ffe7ae63192232e4ba337d",
+        "name": "Unia"
+      },
+      {
+        "id": "59ffe7ae3171fdcc75d8669f",
+        "name": "Combot"
+      },
+      {
+        "id": "59ffe7ae2fec2e79557d831d",
+        "name": "Evidends"
+      }
+    ],
+    "type": "Commercial",
+    "startDate": "2017-11-06T05:40:14 -13:00",
+    "endDate": "2018-09-18T09:36:04 -12:00"
+  },
+  {
+    "id": "59ffe7ae8a391718c3783a00",
+    "active": false,
+    "picture": "http://placehold.it/32x32",
+    "address": "910 Merit Court, Frystown, Alabama, 4790",
+    "title": "Suretech",
+    "description": "Magna ea veniam Lorem ea amet ex non. Labore occaecat aute ea mollit velit dolore esse cupidatat minim fugiat duis irure ex. Elit eiusmod nisi labore cillum excepteur minim cillum proident mollit sint magna nostrud. Anim aliqua fugiat minim ex qui est. Fugiat consequat voluptate non minim officia ad nisi duis pariatur laboris.\r\n",
+    "latitude": 20.058241,
+    "longitude": 126.573097,
+    "tags": [
+      "elit",
+      "magna",
+      "cillum",
+      "ullamco",
+      "sit",
+      "veniam",
+      "consectetur"
+    ],
+    "sponsors": [
+      {
+        "id": "59ffe7aec37dbcc46e8493b5",
+        "name": "Skinserve"
+      },
+      {
+        "id": "59ffe7ae2dddc05b92be1da5",
+        "name": "Vitricomp"
+      },
+      {
+        "id": "59ffe7aeceed5d8660fe9e3a",
+        "name": "Equitox"
+      }
+    ],
+    "type": "Apartments",
+    "startDate": "2017-11-06T05:40:14 -13:00",
+    "endDate": "2018-11-05T02:34:50 -13:00"
+  },
+  {
+    "id": "59ffe7ae15b899706f462411",
+    "active": true,
+    "picture": "http://placehold.it/32x32",
+    "address": "809 Ashland Place, Lindcove, Louisiana, 4246",
+    "title": "Teraprene",
+    "description": "Occaecat amet do commodo et labore dolore voluptate cupidatat. Fugiat voluptate laborum eiusmod sit deserunt dolore id. Ad velit non culpa officia id aliqua mollit nulla. Lorem duis sit incididunt culpa occaecat sit duis deserunt minim adipisicing. Cillum proident ullamco tempor deserunt Lorem sunt.\r\n",
+    "latitude": 56.036682,
+    "longitude": 144.729725,
+    "tags": [
+      "adipisicing",
+      "nostrud",
+      "voluptate",
+      "aliquip",
+      "Lorem",
+      "reprehenderit",
+      "ex"
+    ],
+    "sponsors": [
+      {
+        "id": "59ffe7aec61a7996cccda8f2",
+        "name": "Nurali"
+      },
+      {
+        "id": "59ffe7ae9837d304edee1f14",
+        "name": "Daycore"
+      },
+      {
+        "id": "59ffe7ae150a7f12fcc9ca0a",
+        "name": "Vortexaco"
+      }
+    ],
+    "type": "Townhouse",
+    "startDate": "2017-11-06T05:40:14 -13:00",
+    "endDate": "2019-04-02T05:18:13 -13:00"
+  }
+]
