@@ -8,7 +8,7 @@ import { DateAdapter, MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { Router, RouterModule  } from '@angular/router';
-import { HttpModule, Http, RequestOptions } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppMaterialModule } from './core/shared/material.module';
 
 import * as svc from './core/services/index';
@@ -27,7 +27,7 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AppMaterialModule,
     RouterModule.forRoot(ROUTES),
     PagesModule.forRoot()

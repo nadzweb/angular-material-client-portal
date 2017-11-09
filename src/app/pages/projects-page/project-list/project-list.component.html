@@ -1,3 +1,43 @@
-<p>
-  project-list works!
-</p>
+<h2>Projects</h2>
+<div class="row datasource-list-container">
+  <div class="col s12 m5 l5">
+    <mat-card>
+      <div class="">
+        <mat-form-field>
+          <input matInput #filter placeholder="Filter projects">
+        </mat-form-field>
+        <button mat-mini-fab color="primary" (click)="add()"><mat-icon>add</mat-icon></button>
+      </div>
+      
+      <div *ngIf="error" class="margin-bottom-10 error-card"> An error has occured, can not retrieve projects.</div>
+
+      <mat-progress-spinner *ngIf="processing" mode="indeterminate" diameter="30" strokeWidth="3"></mat-progress-spinner>
+
+      <span *ngIf="!processing && totalProjects<=0" class="no-data">There are no projects</span>
+      
+      <mat-table class="datasource-list-table" #projectListTable [dataSource]="dataSource" [trackBy]="index" [ngClass]="{'hide': totalProjects<=0}">
+        <!--column: name -->
+        <div matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef>
+            <div class="col-name">Project Title</div>
+            <button class="col-refresh-button" mat-icon-button (click)="initProjects()" matTooltip="Refresh">
+              <mat-icon class="md-24">refresh</mat-icon>
+            </button>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let project"> {{project.title}}</mat-cell>
+        </div>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row
+        *matRowDef="let row; columns: displayedColumns;"
+        (click)="edit(row)"
+        [ngClass]="{'selected': selected.project.refId === row.refId}"></mat-row>
+      </mat-table>
+      <mat-paginator [ngClass]="{'hide': totalProjects<=0}" #paginator [length]="totalProjects" [pageSize]="10" [pageIndex]="0" itemsPerPageLabel=""></mat-paginator>
+    </mat-card>
+  </div>
+
+  <div class="col s12 m7 l7 datasource-content-container">
+    <app-project [project]="selected.project" (reload)="reload($event)"></app-project>
+  </div>
+</div>

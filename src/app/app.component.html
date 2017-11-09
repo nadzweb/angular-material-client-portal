@@ -11,14 +11,24 @@
         <div class="user-name">Mark Robert</div>
       </header>
       <ul>
-        <li><mat-icon>dashboard</mat-icon><span>Dashboard</span></li>
-        <li routerLinkActive="active">
-          <a routerLink="/projects"><mat-icon>line_style</mat-icon><span>Projects</span></a>
+        <li>
+          <a [routerLink]="['/']" routerLinkActive="active"><mat-icon>dashboard</mat-icon><span>Dashboard</span></a>
         </li>
-        <li><mat-icon>description</mat-icon><span>Documents</span></li>
-        <li><mat-icon>web</mat-icon><span>News</span></li>
-        <li><mat-icon>event</mat-icon><span>Events</span></li>
-        <li><mat-icon>settings</mat-icon><span>Settings</span></li>
+        <li>
+          <a [routerLink]="['/projects']" [routerLinkActive]="['active']"><mat-icon>line_style</mat-icon><span>Projects</span></a>
+        </li>
+        <li>
+          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>description</mat-icon><span>Documents</span></a>
+        </li>
+        <li>
+          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>web</mat-icon><span>News</span></a>
+        </li>
+        <li>
+          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>event</mat-icon><span>Events</span></a>
+        </li>
+        <li>
+          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>settings</mat-icon><span>Settings</span></a>
+        </li>
       </ul>
     </nav>
   </mat-sidenav>

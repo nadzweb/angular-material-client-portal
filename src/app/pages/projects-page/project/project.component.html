@@ -1,3 +1,30 @@
-<p>
-  project works!
-</p>
+<mat-card *ngIf="project" class="content-card">
+  
+   <mat-tab-group>
+      <mat-tab label="Basic">
+        <div class="row">
+          <div class="col s12 m6">
+            simplete
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <strong>Tags: </strong><br/>
+            <mat-chip-list>
+              <mat-chip *ngFor="let tag of project.allTags" [color]="tag.color" selected="true">{{tag.name}}</mat-chip>
+            </mat-chip-list>
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Location">
+        <div class="row">
+          <div class="col s12">
+            
+          </div>
+        </div>
+      </mat-tab>
+
+   </mat-tab-group>
+
+</mat-card>

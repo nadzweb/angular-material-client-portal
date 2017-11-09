@@ -42,7 +42,7 @@ export class ProjectTableData extends DataSource<any> {
     return Observable.merge(...displayDataChanges).map(() => {
       const data = this.db.data.projects.slice();
       this.filteredProjects = data.filter((item: any) => {
-        const searchStr = (item.processName + item.url).toLowerCase();
+        const searchStr = (item.title + item.type + item.address).toLowerCase();
         return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
       });
 
