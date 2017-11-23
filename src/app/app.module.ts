@@ -3,7 +3,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DateAdapter, MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
+import { DateAdapter} from '@angular/material';
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -33,7 +33,6 @@ import { PagesModule } from './pages/pages.module';
     PagesModule.forRoot()
   ],
   providers: [
-    { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true },
     svc.AuthService,
   ],
   bootstrap: [AppComponent]
