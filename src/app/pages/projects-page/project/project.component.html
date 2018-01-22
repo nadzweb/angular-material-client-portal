@@ -4,7 +4,10 @@
       <mat-tab label="Basic">
         <div class="row">
           <div class="col s12 m6">
-            simplete
+            <p>Title: {{project.title}} <mat-chip-list><mat-chip>{{project.active}}</mat-chip></mat-chip-list></p>
+            <p>Address: {{project.address}}</p>
+            <p>Summary: {{project.description}}</p>
+            {{project | json}}
           </div>
         </div>
         <div class="row">
