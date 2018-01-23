@@ -3,7 +3,7 @@
 
     <nav class="menu" tabindex="0">
 	    <div class="smartphone-menu-trigger"></div>
-      <a mat-mini-fab color="default" (click)="sidenav.toggle()" class="menu-trigger"><mat-icon>menu</mat-icon></a>
+      <a mat-mini-fab color="default" (click)="sidenav.close()" class="menu-trigger"><mat-icon>menu</mat-icon></a>
       <header class="avatar">
         <div class="app-title">nadzweb.com</div>
         <div class="app-sub-title">Customer Portal</div>
@@ -17,30 +17,25 @@
         <li>
           <a [routerLink]="['/projects']" [routerLinkActive]="['active']"><mat-icon>line_style</mat-icon><span>Projects</span></a>
         </li>
-        <li>
+        <li class="hide">
           <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>description</mat-icon><span>Documents</span></a>
         </li>
-        <li>
+        <li class="hide">
           <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>web</mat-icon><span>News</span></a>
         </li>
-        <li>
+        <li class="hide">
           <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>event</mat-icon><span>Events</span></a>
         </li>
-        <li>
+        <li class="hide">
           <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>settings</mat-icon><span>Settings</span></a>
         </li>
       </ul>
     </nav>
   </mat-sidenav>
-  
-  <mat-toolbar color="primary" class="hide">
-    <div class="row">
-      <div class="col s2">
-        <a mat-mini-fab color="default" (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></a>
-      </div>
-      <div class="col s8">
-        <div class="title">Client Portal</div>
-      </div>
+
+  <mat-toolbar color="default" *ngIf="!sidenavActive">
+    <div class="toolbar-action-wrap">
+      <a (click)="sidenav.open()"><mat-icon>menu</mat-icon></a>
     </div>
   </mat-toolbar>
   

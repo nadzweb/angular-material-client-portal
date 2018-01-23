@@ -11,6 +11,10 @@ import { AuthService } from './core/services/auth.service';
 })
 export class AppComponent implements OnInit {
 
+  @ViewChild('sidenav') sidenav: MatSidenav;
+
+  sidenavActive: boolean;
+
   constructor(
   private location: Location,
   private authService: AuthService) {
@@ -24,5 +28,9 @@ export class AppComponent implements OnInit {
         this.authService.login();
       }
     }
+
+    this.sidenav.openedChange.subscribe( drawer => {
+      this.sidenavActive = drawer;
+    });
   }
 }

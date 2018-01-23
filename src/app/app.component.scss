@@ -87,7 +87,7 @@ h2 {
 
           &.active {
             color: $app-left-nav-hover-bg-color;
-            background-color: $white;
+            background-color: $app-left-nav-hover-text-color;
           }
         }
         
@@ -96,13 +96,12 @@ h2 {
   }
 }
 
-.mat-toolbar-row {
-  display: block !important;
-  div.row {
-    margin-bottom: 0;
-    padding-top: 13px;
-    .title {
-      text-align: center;
+.mat-toolbar-single-row {
+  height: 30px !important;
+  .toolbar-action-wrap {
+    margin-top: 10px;
+    a {
+      cursor: pointer;
     }
   }
 }
