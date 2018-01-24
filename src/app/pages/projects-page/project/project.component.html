@@ -1,33 +1,23 @@
-<mat-card *ngIf="project" class="content-card">
+<mat-card *ngIf="project" class="content-card project-container">
   
    <mat-tab-group>
       <mat-tab label="Basic">
         <div class="row">
-          <div class="col s12 m6">
-            <p>Title: {{project.title}} <mat-chip-list><mat-chip>{{project.active}}</mat-chip></mat-chip-list></p>
-            <p>Address: {{project.address}}</p>
+          <div class="col s12">
+            <p><b>{{project.title}}</b> <span class="project-status status-{{project.active}}"><span *ngIf="project.active">Active</span> <span *ngIf="!project.active">In Active</span></span>
+            </p>
+            <p>{{project.address}}</p>
             <p>Summary: {{project.description}}</p>
-            {{project | json}}
           </div>
         </div>
         <div class="row">
           <div class="col s12">
-            <strong>Tags: </strong><br/>
             <mat-chip-list>
               <mat-chip *ngFor="let tag of project.allTags" [color]="tag.color" selected="true">{{tag.name}}</mat-chip>
             </mat-chip-list>
           </div>
         </div>
       </mat-tab>
-
-      <mat-tab label="Location">
-        <div class="row">
-          <div class="col s12">
-            
-          </div>
-        </div>
-      </mat-tab>
-
    </mat-tab-group>
 
 </mat-card>

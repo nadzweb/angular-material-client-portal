@@ -12,22 +12,24 @@
       </header>
       <ul>
         <li>
-          <a [routerLink]="['/']" routerLinkActive="active"><mat-icon>dashboard</mat-icon><span>Dashboard</span></a>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}"><mat-icon>dashboard</mat-icon><span>Dashboard</span></a>
         </li>
         <li>
-          <a [routerLink]="['/projects']" [routerLinkActive]="['active']"><mat-icon>line_style</mat-icon><span>Projects</span></a>
+          <a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}"><mat-icon>line_style</mat-icon><span>Projects</span></a>
         </li>
         <li class="hide">
-          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>description</mat-icon><span>Documents</span></a>
+          <a [routerLink]="['/']" routerLinkActive="active"><mat-icon>description</mat-icon><span>Documents</span></a>
         </li>
         <li class="hide">
-          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>web</mat-icon><span>News</span></a>
+          <a [routerLink]="['/']" routerLinkActive="active"><mat-icon>web</mat-icon><span>News</span></a>
         </li>
         <li class="hide">
-          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>event</mat-icon><span>Events</span></a>
+          <a [routerLink]="['/']" routerLinkActive="active"><mat-icon>event</mat-icon><span>Events</span></a>
         </li>
         <li class="hide">
-          <a [routerLink]="['/']" [routerLinkActive]="['active']"><mat-icon>settings</mat-icon><span>Settings</span></a>
+          <a [routerLink]="['/']" routerLinkActive="active"><mat-icon>settings</mat-icon><span>Settings</span></a>
         </li>
       </ul>
     </nav>

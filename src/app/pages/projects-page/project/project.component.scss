@@ -1,5 +1,17 @@
 @import '../../../../scss/app/variables';
 
-.project-status-true {
-    background-color: green;
-} 
+.project-container {
+  .project-status {
+    color: $white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+
+    &.status-true {
+      background-color: green;
+    }
+    &.status-false {
+      background-color: red;
+    }
+  }
+}
